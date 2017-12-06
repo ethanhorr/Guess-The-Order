@@ -10,12 +10,16 @@
     <Grid Background="LightSkyBlue">
         <StackPanel Orientation="Horizontal" Height="auto">
             <StackPanel HorizontalAlignment="Left" Height="400"  VerticalAlignment="Top" Width="500" Background="Black" Margin="80,50,0,0">
-            <Image Height="400" Width="500" Source="Assets/Level_One/1.jpg"/>
+                <Button>
+                    <Image Height="400" Width="500" Source="Assets/Level_One/1.jpg"/>
+                </Button>
         </StackPanel>
         </StackPanel>
 
         <StackPanel HorizontalAlignment="Left" Height="400"  VerticalAlignment="Top" Width="500" Background="Black" Margin="80,530,0,0">
-            <Image Height="400" Width="500" Source="Assets/Level_One/2.jpg"/>
+            <Button>
+                <Image Height="400" Width="500" Source="Assets/Level_One/2.jpg"/>
+            </Button>
         </StackPanel>
 
         <StackPanel HorizontalAlignment="Left" Height="400"  VerticalAlignment="Top" Width="500" Background="Black" Margin="700,50,0,0">
