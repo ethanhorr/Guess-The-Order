@@ -8,29 +8,12 @@
     mc:Ignorable="d">
 
     <Grid Background="LightSkyBlue">
-        <StackPanel Orientation="Horizontal" Height="auto">
-            <StackPanel HorizontalAlignment="Left" Height="400"  VerticalAlignment="Top" Width="500" Background="Black" Margin="80,50,0,0">
-                <Button>
-                    <Image Height="400" Width="500" Source="Assets/Level_One/1.jpg"/>
-                </Button>
-        </StackPanel>
+        <StackPanel Background="Wheat" HorizontalAlignment="Left" VerticalAlignment="Stretch">
+            <TextBlock Text="Guess the Order" TextAlignment="Center" Style="{ThemeResource HeaderTextBlockStyle}" />
         </StackPanel>
 
-        <StackPanel HorizontalAlignment="Left" Height="400"  VerticalAlignment="Top" Width="500" Background="Black" Margin="80,530,0,0">
-            <Button>
-                <Image Height="400" Width="500" Source="Assets/Level_One/2.jpg"/>
-            </Button>
+        <StackPanel Background="Coral" HorizontalAlignment="Center" VerticalAlignment="Stretch">
+            <TextBlock Text="Guess the Order" TextAlignment="Center" Style="{ThemeResource HeaderTextBlockStyle}" />
         </StackPanel>
-
-        <StackPanel HorizontalAlignment="Left" Height="400"  VerticalAlignment="Top" Width="500" Background="Black" Margin="700,50,0,0">
-            <Image Height="400" Width="500" Source="Assets/Level_One/3.jpg"/>
-        </StackPanel>
-
-            <StackPanel HorizontalAlignment="Left" Height="400"  VerticalAlignment="Top" Width="500" Background="Black" Margin="700,530,0,0">
-            <Image Height="400" Width="500" Source="Assets/Level_One/4.png"/>
-        </StackPanel>
-        
-        <TextBlock Text="Place these Windows Version in order." HorizontalAlignment="Left" Margin="222,968,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="50"/>
-
     </Grid>
 </Page>
