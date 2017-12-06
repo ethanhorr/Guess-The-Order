@@ -370,8 +370,17 @@
     <AppxPackagedFile Include="C:\Users\Lurch\.nuget\packages\system.xml.xmlserializer\4.0.11\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Properties\Default.rd.xml">
-      <PackagePath>Properties\Default.rd.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_One\1.jpg">
+      <PackagePath>Assets\Level_One\1.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_One\2.jpg">
+      <PackagePath>Assets\Level_One\2.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_One\3.jpg">
+      <PackagePath>Assets\Level_One\3.jpg</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_One\4.png">
+      <PackagePath>Assets\Level_One\4.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -399,6 +408,9 @@
     <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Properties\Default.rd.xml">
+      <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\bin\x86\Debug\Guess The Order.xr.xml">
       <PackagePath>Guess The Order.xr.xml</PackagePath>
