@@ -8,10 +8,22 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Orientation="Horizontal" Height="auto">
+            <StackPanel HorizontalAlignment="Left" Height="400"  VerticalAlignment="Top" Width="500" Background="Black" Margin="80,50,0,0">
+            <Image Height="auto" Width="auto"/>
+        </StackPanel>
+        </StackPanel>
 
-        <StackPanel HorizontalAlignment="Center" Height="250" Margin="348,124,0,0" VerticalAlignment="Center" Width="350" Background="Black">
+        <StackPanel HorizontalAlignment="Left" Height="400"  VerticalAlignment="Top" Width="500" Background="Black" Margin="80,530,0,0">
             <Image Height="auto" Width="auto"/>
         </StackPanel>
 
+        <StackPanel HorizontalAlignment="Left" Height="400"  VerticalAlignment="Top" Width="500" Background="Black" Margin="700,50,0,0">
+            <Image Height="auto" Width="auto"/>
+        </StackPanel>
+
+            <StackPanel HorizontalAlignment="Left" Height="400"  VerticalAlignment="Top" Width="500" Background="Black" Margin="700,530,0,0">
+                <Image Height="auto" Width="auto"/>
+            </StackPanel>
     </Grid>
 </Page>

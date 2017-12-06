@@ -24,7 +24,11 @@ namespace Guess_The_Order
     public sealed partial class MainPage : Page
     {
         public MainPage()
+
         {
+            ApplicationView view = ApplicationView.GetForCurrentView();
+            /* Sets app to fullscreen */
+            view.TryEnterFullScreenMode();
             this.InitializeComponent();
         }
 
