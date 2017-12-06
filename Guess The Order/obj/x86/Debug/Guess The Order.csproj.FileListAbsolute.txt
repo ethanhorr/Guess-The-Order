@@ -216,3 +216,8 @@ C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\obj\x86\Debug\qualif
 C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\obj\x86\Debug\qualifiers.txt.intermediate
 C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\obj\x86\Debug\MultipleQualifiersPerDimensionFound.txt
 C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\obj\x86\Debug\ProjectArchitectures.txt
+C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\bin\x86\Debug\Level_One.xbf
+C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\obj\x86\Debug\Level_One.g.i.cs
+C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\obj\x86\Debug\Level_One.g.cs
+C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\obj\x86\Debug\Level_One.xaml
+C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\obj\x86\Debug\Level_One.xbf
