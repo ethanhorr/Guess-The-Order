@@ -44,6 +44,7 @@
       <RootProperty Name="TextAlignment" />
       <RootProperty Name="Style" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="HorizontalAlignment" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Background" />

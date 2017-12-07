@@ -22,6 +22,8 @@ namespace Guess_The_Order
     /// </summary>
     public sealed partial class Play : Page
     {
+
+        int guessCounter;
         public Play()
         {
             this.InitializeComponent();
@@ -29,13 +31,30 @@ namespace Guess_The_Order
 
         private void Image_One_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            ImageOne.CanDrag = true;
-            ImageOne.DragLeave += ImageOne_DragLeave;
-        }
+            if (guessCounter == 0)
+            {
+                GuessBox1.Source = ImageOne.Source;
+            }
+            if (guessCounter == 1)
+            {
+                GuessBox1.Source = ImageTwo.Source;
+            }
+            if (guessCounter == 2)
+            {
+                GuessBox1.Source = ImageThree.Source;
+   
+            }
+            if (guessCounter == 3)
+            {
+                GuessBox1.Source = ImageFour.Source;
+            }
+            guessCounter++;
 
+        }
         private void ImageOne_DragLeave(object sender, DragEventArgs e)
         {
-            throw new NotImplementedException();
+
+            GuessBox1.Source = ImageOne.Source;
         }
     }
 }
