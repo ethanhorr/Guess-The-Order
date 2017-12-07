@@ -23,20 +23,13 @@
         </Grid.RowDefinitions>
 
 
-        <Image x:Name="ImageOne" Grid.Column="1" Source="Assets/Level_One/1.png" VerticalAlignment="Top" Margin="25" Tapped="Image_One_Tapped"></Image>
+        <Image x:ConnectionId='1' x:Name="ImageOne" Grid.Column="1" Source="Assets/Level_One/1.png" VerticalAlignment="Top" Margin="25"                          ></Image>
         <Image Grid.Column="2" Source="Assets/Level_One/2.png" VerticalAlignment="Top" Margin="25"></Image>
         <Image Grid.Row="1" Grid.Column="1" Source="Assets/Level_One/3.png" VerticalAlignment="Top" Margin="25"></Image>
         <Image Grid.Row="1" Grid.Column="2" Source="Assets/Level_One/4.png" VerticalAlignment="Top" Margin="25"></Image>
         <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Center">
             <TextBlock Text="Hello" />
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="2*"/>
-                </Grid.ColumnDefinitions>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="2*"/>
-                </Grid.RowDefinitions>
-            </Grid>
         </StackPanel>
     </Grid>
 </Page>
+

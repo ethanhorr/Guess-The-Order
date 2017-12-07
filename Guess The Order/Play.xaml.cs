@@ -27,5 +27,15 @@ namespace Guess_The_Order
             this.InitializeComponent();
         }
 
+        private void Image_One_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            ImageOne.CanDrag = true;
+            ImageOne.DragLeave += ImageOne_DragLeave;
+        }
+
+        private void ImageOne_DragLeave(object sender, DragEventArgs e)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

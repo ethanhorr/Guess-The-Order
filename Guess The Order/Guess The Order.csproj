@@ -113,9 +113,9 @@
     <None Include="Guess The Order_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\Level_One\1.jpg" />
-    <Content Include="Assets\Level_One\2.jpg" />
-    <Content Include="Assets\Level_One\3.jpg" />
+    <Content Include="Assets\Level_One\1.png" />
+    <Content Include="Assets\Level_One\2.png" />
+    <Content Include="Assets\Level_One\3.png" />
     <Content Include="Assets\Level_One\4.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
