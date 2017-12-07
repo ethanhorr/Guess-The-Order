@@ -24,6 +24,8 @@ namespace Guess_The_Order
     {
 
         int guessCounter;
+        int[] answer = new int[] { 1, 4, 3, 2 };
+        int[] guess;
         public Play()
         {
             this.InitializeComponent();

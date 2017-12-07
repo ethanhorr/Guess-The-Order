@@ -62,6 +62,9 @@
     <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
       <RootProperty Name="Height" />
     </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Border">
+      <RootProperty Name="Background" />
+    </RootType>
     <RootType FullName="Guess_The_Order.Play" />
   </Roots.RootTypes>
 </Roots>

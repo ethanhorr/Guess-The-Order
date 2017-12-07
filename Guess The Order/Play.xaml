@@ -21,7 +21,8 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
-
+        <Border Grid.Column="0" Grid.Row="1" Background="Bisque"/>
+        <Border Grid.Column="4" Grid.Row="1" Background="Bisque"/>
         <Image x:Name="ImageOne" Grid.Column="1" Source="Assets/Level_One/1.png" VerticalAlignment="Top" Margin="25" Tapped="Image_One_Tapped"></Image>
         <Image x:Name="ImageTwo" Grid.Column="2" Source="Assets/Level_One/2.png" VerticalAlignment="Top" Margin="25"></Image>
         <Image x:Name="ImageThree" Grid.Row="1" Grid.Column="1" Source="Assets/Level_One/3.png" VerticalAlignment="Top" Margin="25"></Image>
