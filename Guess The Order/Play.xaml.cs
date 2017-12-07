@@ -13,19 +13,15 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
-// The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
-
 namespace Guess_The_Order
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class Play : Page
     {
 
         int guessCounter;
         int[] answer = new int[] { 1, 4, 3, 2 };
-        int[] guess;
+        int[] guess = new int [4];
+
         public Play()
         {
             this.InitializeComponent();
@@ -33,30 +29,102 @@ namespace Guess_The_Order
 
         private void Image_One_Tapped(object sender, TappedRoutedEventArgs e)
         {
+            int j = 0;
             if (guessCounter == 0)
             {
                 GuessBox1.Source = ImageOne.Source;
+                j = 1;
             }
             if (guessCounter == 1)
             {
                 GuessBox1.Source = ImageTwo.Source;
+                j = 2;
             }
             if (guessCounter == 2)
             {
                 GuessBox1.Source = ImageThree.Source;
-   
+                j = 3;
             }
             if (guessCounter == 3)
             {
                 GuessBox1.Source = ImageFour.Source;
+                j = 4;
             }
             guessCounter++;
+          guess[1] = j;
 
         }
-        private void ImageOne_DragLeave(object sender, DragEventArgs e)
+
+        private void ImageTwo_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (guessCounter == 0)
+            {
+                GuessBox2.Source = ImageOne.Source;
+            }
+            if (guessCounter == 1)
+            {
+                GuessBox2.Source = ImageTwo.Source;
+            }
+            if (guessCounter == 2)
+            {
+                GuessBox2.Source = ImageThree.Source;
+
+            }
+            if (guessCounter == 3)
+            {
+                GuessBox2.Source = ImageFour.Source;
+            }
+            guessCounter++;
+        }
+
+        private void ImageThree_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (guessCounter == 0)
+            {
+                GuessBox3.Source = ImageOne.Source;
+            }
+            if (guessCounter == 1)
+            {
+                GuessBox3.Source = ImageTwo.Source;
+            }
+            if (guessCounter == 2)
+            {
+                GuessBox3.Source = ImageThree.Source;
+
+            }
+            if (guessCounter == 3)
+            {
+                GuessBox3.Source = ImageFour.Source;
+            }
+            guessCounter++;
+        }
+
+        private void ImageFour_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            if (guessCounter == 0)
+            {
+                GuessBox4.Source = ImageOne.Source;
+            }
+            if (guessCounter == 1)
+            {
+                GuessBox4.Source = ImageTwo.Source;
+            }
+            if (guessCounter == 2)
+            {
+                GuessBox4.Source = ImageThree.Source;
+
+            }
+            if (guessCounter == 3)
+            {
+                GuessBox4.Source = ImageFour.Source;
+            }
+            guessCounter++;
+        }
+
+
+        private void clearGuessBox()
         {
 
-            GuessBox1.Source = ImageOne.Source;
         }
     }
 }
