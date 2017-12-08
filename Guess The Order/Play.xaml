@@ -21,20 +21,70 @@
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
-        <Border Grid.Column="0" Grid.Row="1" Background="Bisque"/>
-        <Border Grid.Column="4" Grid.Row="1" Background="Bisque"/>
+
+
         <Image x:Name="ImageOne" Grid.Column="1" Source="Assets/Level_One/1.png" VerticalAlignment="Top" Margin="25" Tapped="Image_One_Tapped"></Image>
         <Image x:Name="ImageTwo" Grid.Column="2" Source="Assets/Level_One/2.png" VerticalAlignment="Top" Margin="25" Tapped="ImageTwo_Tapped"></Image>
         <Image x:Name="ImageThree" Grid.Row="1" Grid.Column="1" Source="Assets/Level_One/3.png" VerticalAlignment="Top" Margin="25" Tapped="ImageThree_Tapped"></Image>
         <Image x:Name="ImageFour" Grid.Row="1" Grid.Column="2" Source="Assets/Level_One/4.png" VerticalAlignment="Top" Margin="25" Tapped="ImageFour_Tapped"></Image>
 
-        <TextBlock Text="Order Version of Windows from oldest to newest" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="25"/>
+        <TextBlock Text="Order Version of Windows from oldest to newest" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="35"/>
+
         
-        <TextBlock Text="Level" Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" VerticalAlignment="Center" FontSize="25"/>
+        <StackPanel Grid.Column="0" Grid.Row="1">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="25*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Button Background="Transparent" Margin="5" Tapped="Confirm_Tapped">
+                    <Image Grid.Column="0"  Grid.Row="0" Source="Assets/Buttons/Confirm.png" ></Image>
+                </Button>
+                <Button Background="Transparent" Margin="5" Grid.Column="1"  Grid.Row="0" Tapped="Clear_Tapped" >
+                    <Image Source="Assets/Buttons/Clear.png"></Image>
+                </Button>
+                <Button Background="Transparent" Margin="5" Grid.Column="0"  Grid.Row="1">
+                    <Image Grid.Column="0"  Grid.Row="1" Source="Assets/Buttons/Undo.png"></Image>
+                </Button>
+                <Button Background="Transparent" Margin="5" Grid.Column="1"  Grid.Row="1">
+                    <Image Grid.Column="1"  Grid.Row="1" Source="Assets/Buttons/Trash.png"></Image>
+                </Button>
+            </Grid>
+
+        </StackPanel>
+
+        <StackPanel Grid.Column="4" Grid.Row="1">
+            <Grid>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100"/>
+                    <ColumnDefinition Width="25*"/>
+                    <ColumnDefinition Width="100"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                    <RowDefinition Height="auto"/>
+                </Grid.RowDefinitions>
+                
+                
+                <Image Grid.Column="0"  Grid.Row="0" Source="Assets/Icon/Coin.png" Margin="10"></Image>
+                <TextBlock x:Name="Money" Grid.Column="1"  Grid.Row="0" Text="" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"></TextBlock>
+                <Image Grid.Column="0"  Grid.Row="1" Source="Assets/Icon/Level.png" Margin="10"></Image>
+                <TextBlock Grid.Column="1"  Grid.Row="1" Text="Level: 1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"></TextBlock>
+                <Image Grid.Column="0"  Grid.Row="2" Source="Assets/Icon/Level.png" Margin="10"></Image>
+                <TextBlock Grid.Column="1"  Grid.Row="2" Text="Level: 1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"></TextBlock>
+            </Grid>
+        </StackPanel>
         
-            <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
-            
-            
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="10*"/>
@@ -47,12 +97,12 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-
                 <Image Grid.Column="0" Source="Assets/Level_One/GuessBox.png" VerticalAlignment="Top" Margin="25" x:Name="GuessBox1"></Image>
                 <Image Grid.Column="1" Source="Assets/Level_One/GuessBox.png" VerticalAlignment="Top" Margin="25" x:Name="GuessBox2"></Image>
                 <Image Grid.Column="2" Source="Assets/Level_One/GuessBox.png" VerticalAlignment="Top" Margin="25" x:Name="GuessBox3"></Image>
                 <Image Grid.Column="3" Source="Assets/Level_One/GuessBox.png" VerticalAlignment="Top" Margin="25" x:Name="GuessBox4"></Image>
             </Grid>
         </StackPanel>
+
     </Grid>
 </Page>

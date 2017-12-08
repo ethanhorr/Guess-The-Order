@@ -11,6 +11,7 @@ using Windows.UI.Xaml.Controls.Primitives;
 using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
+using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
 namespace Guess_The_Order
@@ -18,40 +19,47 @@ namespace Guess_The_Order
     public sealed partial class Play : Page
     {
 
-        int guessCounter;
-        int[] answer = new int[] { 1, 4, 3, 2 };
-        int[] guess = new int [4];
+        int guessCounter, currentLevel;
+        int coins = 100;
+
+        int[] answer = new int[] { 1, 3, 4, 2 };
+        int[] guess = new int [] { 0, 0, 0, 0 };
 
         public Play()
         {
+     
             this.InitializeComponent();
+            RefreshCoins();
         }
 
+        private void RefreshCoins()
+        {
+            Money.Text = "" + coins;
+        }
         private void Image_One_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            int j = 0;
             if (guessCounter == 0)
             {
                 GuessBox1.Source = ImageOne.Source;
-                j = 1;
+                guess[0] = 1;
+               
             }
             if (guessCounter == 1)
             {
-                GuessBox1.Source = ImageTwo.Source;
-                j = 2;
+                GuessBox2.Source = ImageOne.Source;
+                guess[1] = 1;
             }
             if (guessCounter == 2)
             {
-                GuessBox1.Source = ImageThree.Source;
-                j = 3;
+                GuessBox3.Source = ImageOne.Source;
+                guess[2] = 1;
             }
             if (guessCounter == 3)
             {
-                GuessBox1.Source = ImageFour.Source;
-                j = 4;
+                GuessBox4.Source = ImageOne.Source;
+                guess[3] = 1;
             }
             guessCounter++;
-          guess[1] = j;
 
         }
 
@@ -59,20 +67,23 @@ namespace Guess_The_Order
         {
             if (guessCounter == 0)
             {
-                GuessBox2.Source = ImageOne.Source;
+                GuessBox1.Source = ImageTwo.Source;
+                guess[0] = 2;
             }
             if (guessCounter == 1)
             {
                 GuessBox2.Source = ImageTwo.Source;
+                guess[1] = 2;
             }
             if (guessCounter == 2)
             {
-                GuessBox2.Source = ImageThree.Source;
-
+                GuessBox3.Source = ImageTwo.Source;
+                guess[2] = 2;
             }
             if (guessCounter == 3)
             {
-                GuessBox2.Source = ImageFour.Source;
+                GuessBox4.Source = ImageTwo.Source;
+                guess[3] = 2;
             }
             guessCounter++;
         }
@@ -81,20 +92,23 @@ namespace Guess_The_Order
         {
             if (guessCounter == 0)
             {
-                GuessBox3.Source = ImageOne.Source;
+                GuessBox1.Source = ImageThree.Source;
+                guess[0] = 3;
             }
             if (guessCounter == 1)
             {
-                GuessBox3.Source = ImageTwo.Source;
+                GuessBox2.Source = ImageThree.Source;
+                guess[1] = 3;
             }
             if (guessCounter == 2)
             {
                 GuessBox3.Source = ImageThree.Source;
-
+                guess[2] = 3;
             }
             if (guessCounter == 3)
             {
-                GuessBox3.Source = ImageFour.Source;
+                GuessBox4.Source = ImageThree.Source;
+                guess[3] = 3;
             }
             guessCounter++;
         }
@@ -103,28 +117,67 @@ namespace Guess_The_Order
         {
             if (guessCounter == 0)
             {
-                GuessBox4.Source = ImageOne.Source;
+                GuessBox1.Source = ImageFour.Source;
+                guess[0] = 4;
             }
             if (guessCounter == 1)
             {
-                GuessBox4.Source = ImageTwo.Source;
+                GuessBox2.Source = ImageFour.Source;
+                guess[1] = 4;
             }
             if (guessCounter == 2)
             {
-                GuessBox4.Source = ImageThree.Source;
-
+                GuessBox3.Source = ImageFour.Source;
+                guess[2] = 4;
             }
             if (guessCounter == 3)
             {
                 GuessBox4.Source = ImageFour.Source;
+                guess[3] = 4;
             }
             guessCounter++;
         }
 
-
-        private void clearGuessBox()
+        /* Handles the Clear Button Tapped Event */
+        private void Clear_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
+            clearGuessBoxes();
+            guessCounter = 0;
+            guess = new int[] { 0, 0, 0, 0 };
+            coins -= 10;
+            RefreshCoins();
         }
+
+        /* clearGuessBoxes : This method clears all guesses */
+        private void clearGuessBoxes()
+        {
+            GuessBox1.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+            GuessBox2.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+            GuessBox3.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+            GuessBox4.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+            guessCounter = 0;
+            guess = new int[] { 0, 0, 0, 0 };
+        }
+
+        private void Confirm_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+            CheckAnswer();
+        }
+
+        private void CheckAnswer()
+        {
+            if(guess[0] == answer[0] && guess[1] == answer[1] && guess[2] == answer[2] && guess[3] == answer[3])
+            {
+                coins += 25;
+                clearGuessBoxes();
+                RefreshCoins();
+            }
+            else
+            {
+                clearGuessBoxes();
+                RefreshCoins();
+            }
+        }
+
     }
 }

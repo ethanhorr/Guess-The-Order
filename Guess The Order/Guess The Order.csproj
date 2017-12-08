@@ -113,6 +113,12 @@
     <None Include="Guess The Order_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\Buttons\Clear.png" />
+    <Content Include="Assets\Buttons\Confirm.png" />
+    <Content Include="Assets\Buttons\Trash.png" />
+    <Content Include="Assets\Buttons\Undo.png" />
+    <Content Include="Assets\Icon\Coin.png" />
+    <Content Include="Assets\Icon\Level.png" />
     <Content Include="Assets\Level_One\1.png" />
     <Content Include="Assets\Level_One\2.png" />
     <Content Include="Assets\Level_One\3.png" />

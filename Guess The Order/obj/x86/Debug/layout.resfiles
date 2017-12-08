@@ -1,4 +1,10 @@
 WinMetadata\Windows.winmd
+Assets\Buttons\Clear.png
+Assets\Buttons\Confirm.png
+Assets\Buttons\Trash.png
+Assets\Buttons\Undo.png
+Assets\Icon\Coin.png
+Assets\Icon\Level.png
 Assets\Level_One\1.png
 Assets\Level_One\2.png
 Assets\Level_One\3.png
