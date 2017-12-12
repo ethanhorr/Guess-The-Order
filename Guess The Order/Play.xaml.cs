@@ -14,6 +14,11 @@ using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Media.Imaging;
 using Windows.UI.Xaml.Navigation;
 
+/*
+ *  Author: Ethan Horrigan
+ *  Class: Play - Loads the Current Level & Handles all events within 
+*/
+
 namespace Guess_The_Order
 {
     public sealed partial class Play : Page
@@ -27,15 +32,17 @@ namespace Guess_The_Order
 
         public Play()
         {
-     
             this.InitializeComponent();
             RefreshCoins();
         }
 
+        /* Updates Coin amount to the UI */
         private void RefreshCoins()
         {
             Money.Text = "" + coins;
         }
+
+        /* Methods to Handle Image's Tapped */
         private void Image_One_Tapped(object sender, TappedRoutedEventArgs e)
         {
             if (guessCounter == 0)
@@ -141,14 +148,21 @@ namespace Guess_The_Order
         /* Handles the Clear Button Tapped Event */
         private void Clear_Tapped(object sender, TappedRoutedEventArgs e)
         {
-            clearGuessBoxes();
-            guessCounter = 0;
-            guess = new int[] { 0, 0, 0, 0 };
-            coins -= 10;
-            RefreshCoins();
+            if (guessCounter == 0)
+            {
+                return;
+            }
+            else
+            {
+                clearGuessBoxes();
+                guessCounter = 0;
+                guess = new int[] { 0, 0, 0, 0 };
+                coins -= 10;
+                RefreshCoins();
+            }
         }
 
-        /* clearGuessBoxes : This method clears all guesses */
+        /*  Clears all Guesses within the Guess Boxes */
         private void clearGuessBoxes()
         {
             GuessBox1.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
@@ -159,11 +173,13 @@ namespace Guess_The_Order
             guess = new int[] { 0, 0, 0, 0 };
         }
 
+        /* Handles Confrim Button Tapped Event */
         private void Confirm_Tapped(object sender, TappedRoutedEventArgs e)
         {
             CheckAnswer();
         }
 
+        /* Compares Guess Array with Answer Array*/
         private void CheckAnswer()
         {
             if(guess[0] == answer[0] && guess[1] == answer[1] && guess[2] == answer[2] && guess[3] == answer[3])

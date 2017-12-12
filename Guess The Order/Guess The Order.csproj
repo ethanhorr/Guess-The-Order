@@ -95,6 +95,7 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Constants.cs" />
     <Compile Include="Level_One.xaml.cs">
       <DependentUpon>Level_One.xaml</DependentUpon>
     </Compile>
