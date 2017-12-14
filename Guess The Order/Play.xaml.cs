@@ -195,5 +195,15 @@ namespace Guess_The_Order
             }
         }
 
+        private void Undo()
+        {
+
+        }
+
+        private void DeleteImage()
+        {
+
+        }
+
     }
 }
