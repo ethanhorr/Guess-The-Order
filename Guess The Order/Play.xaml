@@ -48,12 +48,6 @@
                 <Button Background="Transparent" Margin="5" Grid.Column="1"  Grid.Row="0" Tapped="Clear_Tapped" >
                     <Image Source="Assets/Buttons/Clear.png"></Image>
                 </Button>
-                <Button Background="Transparent" Margin="5" Grid.Column="0"  Grid.Row="1">
-                    <Image Grid.Column="0"  Grid.Row="1" Source="Assets/Buttons/Undo.png"></Image>
-                </Button>
-                <Button Background="Transparent" Margin="5" Grid.Column="1"  Grid.Row="1">
-                    <Image Grid.Column="1"  Grid.Row="1" Source="Assets/Buttons/Trash.png"></Image>
-                </Button>
             </Grid>
 
         </StackPanel>
@@ -78,9 +72,7 @@
                 <Image Grid.Column="0"  Grid.Row="0" Source="Assets/Icon/Coin.png" Margin="10"></Image>
                 <TextBlock x:Name="Money" Grid.Column="1"  Grid.Row="0" Text="" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"></TextBlock>
                 <Image Grid.Column="0"  Grid.Row="1" Source="Assets/Icon/Level.png" Margin="10"></Image>
-                <TextBlock Grid.Column="1"  Grid.Row="1" Text="Level: 1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"></TextBlock>
-                <Image Grid.Column="0"  Grid.Row="2" Source="Assets/Icon/Level.png" Margin="10"></Image>
-                <TextBlock Grid.Column="1"  Grid.Row="2" Text="Level: 1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"></TextBlock>
+                <TextBlock Grid.Column="1" x:Name="CurrentLevel" Grid.Row="1" Text="Level: 1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"></TextBlock>
             </Grid>
         </StackPanel>
         

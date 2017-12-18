@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -25,7 +26,7 @@ namespace Guess_The_Order
     {
 
         int guessCounter, currentLevel;
-        int coins = 100;
+        int coins;
 
         int[] answer = new int[] { 1, 3, 4, 2 };
         int[] guess = new int [] { 0, 0, 0, 0 };
@@ -34,14 +35,24 @@ namespace Guess_The_Order
         {
             this.InitializeComponent();
             RefreshCoins();
+            UpdateLevel();
         }
 
         /* Updates Coin amount to the UI */
         private void RefreshCoins()
         {
-            Money.Text = "" + coins;
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+            Money.Text = localSettings.Values["CoinAmount"].ToString();
+            coins = Convert.ToInt32(localSettings.Values["CoinAmount"]);
         }
 
+        private void UpdateLevel()
+        {
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+            CurrentLevel.Text = "Level: " + localSettings.Values["CurrentLevel"].ToString();
+            currentLevel = Convert.ToInt32(localSettings.Values["CurrentLevel"]);
+            LoadLevel();
+        }
         /* Methods to Handle Image's Tapped */
         private void Image_One_Tapped(object sender, TappedRoutedEventArgs e)
         {
@@ -148,6 +159,8 @@ namespace Guess_The_Order
         /* Handles the Clear Button Tapped Event */
         private void Clear_Tapped(object sender, TappedRoutedEventArgs e)
         {
+
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
             if (guessCounter == 0)
             {
                 return;
@@ -157,12 +170,13 @@ namespace Guess_The_Order
                 clearGuessBoxes();
                 guessCounter = 0;
                 guess = new int[] { 0, 0, 0, 0 };
-                coins -= 10;
+                //coins -= 10;
+                localSettings.Values["CoinAmount"] = coins -= 10;
                 RefreshCoins();
             }
         }
 
-        /*  Clears all Guesses within the Guess Boxes */
+        /*  Clears all Guesses within the Guess Boxes (Sets Image to default) */
         private void clearGuessBoxes()
         {
             GuessBox1.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
@@ -182,27 +196,62 @@ namespace Guess_The_Order
         /* Compares Guess Array with Answer Array*/
         private void CheckAnswer()
         {
-            if(guess[0] == answer[0] && guess[1] == answer[1] && guess[2] == answer[2] && guess[3] == answer[3])
+            ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
+            if (guess[0] == answer[0] && guess[1] == answer[1] && guess[2] == answer[2] && guess[3] == answer[3])
             {
-                coins += 25;
+                //coins += 25;
+                localSettings.Values["CoinAmount"] = coins += 25;
                 clearGuessBoxes();
                 RefreshCoins();
+                currentLevel++;
+                localSettings.Values["CurrentLevel"] = currentLevel;
+                UpdateLevel();
             }
             else
             {
                 clearGuessBoxes();
                 RefreshCoins();
+                UpdateLevel();
             }
         }
 
-        private void Undo()
+        private void LoadLevel()
         {
-
-        }
-
-        private void DeleteImage()
-        {
-
+            switch(currentLevel)
+            {
+                case 1:
+                    ImageOne.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    ImageTwo.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    ImageThree.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    ImageFour.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    break;
+                case 2:
+                    ImageOne.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    ImageTwo.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    ImageThree.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    ImageFour.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    break;
+                case 3:
+                    ImageOne.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    ImageTwo.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    ImageThree.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    ImageFour.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    break;
+                case 4:
+                    ImageOne.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    ImageTwo.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    ImageThree.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    ImageFour.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    break;
+                case 5:
+                    ImageOne.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    ImageTwo.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    ImageThree.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    ImageFour.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    break;
+            }
+            guessCounter = 0;
+            guess = new int[] { 0, 0, 0, 0 };
         }
 
     }

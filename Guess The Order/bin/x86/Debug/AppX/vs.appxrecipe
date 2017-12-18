@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-12T21:12:49.393</Modified>
+      <Modified>2017-12-18T21:50:07.443</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\bin\x86\Debug\Guess The Order.exe">
       <PackagePath>entrypoint\Guess The Order.exe</PackagePath>
-      <Modified>2017-12-12T21:12:47.378</Modified>
+      <Modified>2017-12-18T21:50:06.732</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lurch\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -588,11 +588,11 @@
     <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-12T12:23:29.551</Modified>
+      <Modified>2017-12-18T19:38:02.576</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\bin\x86\Debug\Core\Guess The Order.exe">
       <PackagePath>Guess The Order.exe</PackagePath>
-      <Modified>2017-12-12T21:12:49.385</Modified>
+      <Modified>2017-12-18T21:50:07.434</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
