@@ -120,11 +120,23 @@
     <Content Include="Assets\Buttons\Undo.png" />
     <Content Include="Assets\Icon\Coin.png" />
     <Content Include="Assets\Icon\Level.png" />
+    <Content Include="Assets\Level_Four\1.png" />
+    <Content Include="Assets\Level_Four\2.png" />
+    <Content Include="Assets\Level_Four\3.png" />
+    <Content Include="Assets\Level_Four\4.png" />
     <Content Include="Assets\Level_One\1.png" />
     <Content Include="Assets\Level_One\2.png" />
     <Content Include="Assets\Level_One\3.png" />
     <Content Include="Assets\Level_One\4.png" />
     <Content Include="Assets\Level_One\GuessBox.png" />
+    <Content Include="Assets\Level_Three\1.png" />
+    <Content Include="Assets\Level_Three\2.png" />
+    <Content Include="Assets\Level_Three\3.png" />
+    <Content Include="Assets\Level_Three\4.png" />
+    <Content Include="Assets\Level_Two\1.png" />
+    <Content Include="Assets\Level_Two\2.png" />
+    <Content Include="Assets\Level_Two\3.png" />
+    <Content Include="Assets\Level_Two\4.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -157,9 +169,7 @@
       <Version>6.0.1</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Assets\Level_Two\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

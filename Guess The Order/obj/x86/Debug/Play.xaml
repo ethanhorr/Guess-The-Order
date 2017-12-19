@@ -28,7 +28,7 @@
         <Image x:ConnectionId='3' x:Name="ImageThree" Grid.Row="1" Grid.Column="1" Source="Assets/Level_One/3.png" VerticalAlignment="Top" Margin="25"                           ></Image>
         <Image x:ConnectionId='4' x:Name="ImageFour" Grid.Row="1" Grid.Column="2" Source="Assets/Level_One/4.png" VerticalAlignment="Top" Margin="25"                          ></Image>
 
-        <TextBlock Text="Order Version of Windows from oldest to newest" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="35"/>
+        <TextBlock x:ConnectionId='5' x:Name="Question" Text="Order Version of Windows from oldest to newest" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="25"/>
 
         
         <StackPanel Grid.Column="0" Grid.Row="1">
@@ -42,10 +42,10 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <Button x:ConnectionId='11' Background="Transparent" Margin="5"                        >
+                <Button x:ConnectionId='12' Background="Transparent" Margin="5"                        >
                     <Image Grid.Column="0"  Grid.Row="0" Source="Assets/Buttons/Confirm.png" ></Image>
                 </Button>
-                <Button x:ConnectionId='12' Background="Transparent" Margin="5" Grid.Column="1"  Grid.Row="0"                       >
+                <Button x:ConnectionId='13' Background="Transparent" Margin="5" Grid.Column="1"  Grid.Row="0"                       >
                     <Image Source="Assets/Buttons/Clear.png"></Image>
                 </Button>
             </Grid>
@@ -70,9 +70,9 @@
                 
                 
                 <Image Grid.Column="0"  Grid.Row="0" Source="Assets/Icon/Coin.png" Margin="10"></Image>
-                <TextBlock x:ConnectionId='9' x:Name="Money" Grid.Column="1"  Grid.Row="0" Text="" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"></TextBlock>
+                <TextBlock x:ConnectionId='10' x:Name="Money" Grid.Column="1"  Grid.Row="0" Text="" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"></TextBlock>
                 <Image Grid.Column="0"  Grid.Row="1" Source="Assets/Icon/Level.png" Margin="10"></Image>
-                <TextBlock x:ConnectionId='10' Grid.Column="1" x:Name="CurrentLevel" Grid.Row="1" Text="Level: 1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"></TextBlock>
+                <TextBlock x:ConnectionId='11' Grid.Column="1" x:Name="CurrentLevel" Grid.Row="1" Text="Level: 1" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="50"></TextBlock>
             </Grid>
         </StackPanel>
         
@@ -89,10 +89,10 @@
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
 
-                <Image x:ConnectionId='5' Grid.Column="0" Source="Assets/Level_One/GuessBox.png" VerticalAlignment="Top" Margin="25" x:Name="GuessBox1"></Image>
-                <Image x:ConnectionId='6' Grid.Column="1" Source="Assets/Level_One/GuessBox.png" VerticalAlignment="Top" Margin="25" x:Name="GuessBox2"></Image>
-                <Image x:ConnectionId='7' Grid.Column="2" Source="Assets/Level_One/GuessBox.png" VerticalAlignment="Top" Margin="25" x:Name="GuessBox3"></Image>
-                <Image x:ConnectionId='8' Grid.Column="3" Source="Assets/Level_One/GuessBox.png" VerticalAlignment="Top" Margin="25" x:Name="GuessBox4"></Image>
+                <Image x:ConnectionId='6' Grid.Column="0" Source="Assets/Level_One/GuessBox.png" VerticalAlignment="Top" Margin="25" x:Name="GuessBox1"></Image>
+                <Image x:ConnectionId='7' Grid.Column="1" Source="Assets/Level_One/GuessBox.png" VerticalAlignment="Top" Margin="25" x:Name="GuessBox2"></Image>
+                <Image x:ConnectionId='8' Grid.Column="2" Source="Assets/Level_One/GuessBox.png" VerticalAlignment="Top" Margin="25" x:Name="GuessBox3"></Image>
+                <Image x:ConnectionId='9' Grid.Column="3" Source="Assets/Level_One/GuessBox.png" VerticalAlignment="Top" Margin="25" x:Name="GuessBox4"></Image>
             </Grid>
         </StackPanel>
 

@@ -28,7 +28,7 @@
         <Image x:Name="ImageThree" Grid.Row="1" Grid.Column="1" Source="Assets/Level_One/3.png" VerticalAlignment="Top" Margin="25" Tapped="ImageThree_Tapped"></Image>
         <Image x:Name="ImageFour" Grid.Row="1" Grid.Column="2" Source="Assets/Level_One/4.png" VerticalAlignment="Top" Margin="25" Tapped="ImageFour_Tapped"></Image>
 
-        <TextBlock Text="Order Version of Windows from oldest to newest" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="35"/>
+        <TextBlock x:Name="Question" Text="Order Version of Windows from oldest to newest" Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" FontSize="25"/>
 
         
         <StackPanel Grid.Column="0" Grid.Row="1">

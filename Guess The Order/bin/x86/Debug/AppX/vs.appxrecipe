@@ -19,7 +19,7 @@
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
     <LayoutDir>C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\bin\x86\Debug\AppX</LayoutDir>
-    <RegisteredManifestChecksum>FB94AEAC612B33D97A9E2F12E60FFDCD773EE27DF0D0A0F09F993555BB051DBA</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>51ADDBC86EEEFA9C00DA70CC9E2F4D6A3D405B7E2389D869F01C7C6ABED76862</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>49a94c5e-bd09-4a53-940b-9d3a805e99be_1.0.0.0_x86__226wk2jkk08ne</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>49a94c5e-bd09-4a53-940b-9d3a805e99be_226wk2jkk08ne!App</RegisteredUserModeAppID>
     <RegisteredPackageID>49a94c5e-bd09-4a53-940b-9d3a805e99be</RegisteredPackageID>
@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-18T21:50:07.443</Modified>
+      <Modified>2017-12-19T00:26:18.155</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\bin\x86\Debug\Guess The Order.exe">
       <PackagePath>entrypoint\Guess The Order.exe</PackagePath>
-      <Modified>2017-12-18T21:50:06.732</Modified>
+      <Modified>2017-12-19T00:26:16.347</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lurch\.nuget\packages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -519,6 +519,22 @@
       <PackagePath>Assets\Icon\Level.png</PackagePath>
       <Modified>2017-12-08T16:00:45.777</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Four\1.png">
+      <PackagePath>Assets\Level_Four\1.png</PackagePath>
+      <Modified>2017-12-19T00:15:13.418</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Four\2.png">
+      <PackagePath>Assets\Level_Four\2.png</PackagePath>
+      <Modified>2017-12-19T00:15:13.423</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Four\3.png">
+      <PackagePath>Assets\Level_Four\3.png</PackagePath>
+      <Modified>2017-12-19T00:15:13.426</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Four\4.png">
+      <PackagePath>Assets\Level_Four\4.png</PackagePath>
+      <Modified>2017-12-19T00:15:13.431</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_One\1.png">
       <PackagePath>Assets\Level_One\1.png</PackagePath>
       <Modified>2017-12-06T23:50:52.822</Modified>
@@ -538,6 +554,38 @@
     <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_One\GuessBox.png">
       <PackagePath>Assets\Level_One\GuessBox.png</PackagePath>
       <Modified>2017-12-07T02:01:18.353</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Three\1.png">
+      <PackagePath>Assets\Level_Three\1.png</PackagePath>
+      <Modified>2017-12-19T00:14:57.483</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Three\2.png">
+      <PackagePath>Assets\Level_Three\2.png</PackagePath>
+      <Modified>2017-12-19T00:14:57.495</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Three\3.png">
+      <PackagePath>Assets\Level_Three\3.png</PackagePath>
+      <Modified>2017-12-19T00:14:57.499</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Three\4.png">
+      <PackagePath>Assets\Level_Three\4.png</PackagePath>
+      <Modified>2017-12-19T00:14:57.503</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Two\1.png">
+      <PackagePath>Assets\Level_Two\1.png</PackagePath>
+      <Modified>2017-12-18T23:58:24.667</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Two\2.png">
+      <PackagePath>Assets\Level_Two\2.png</PackagePath>
+      <Modified>2017-12-18T23:58:24.704</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Two\3.png">
+      <PackagePath>Assets\Level_Two\3.png</PackagePath>
+      <Modified>2017-12-18T23:58:24.707</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Two\4.png">
+      <PackagePath>Assets\Level_Two\4.png</PackagePath>
+      <Modified>2017-12-18T23:58:24.711</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -588,11 +636,11 @@
     <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2017-12-18T19:38:02.576</Modified>
+      <Modified>2017-12-19T00:26:17.805</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\bin\x86\Debug\Core\Guess The Order.exe">
       <PackagePath>Guess The Order.exe</PackagePath>
-      <Modified>2017-12-18T21:50:07.434</Modified>
+      <Modified>2017-12-19T00:26:18.152</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

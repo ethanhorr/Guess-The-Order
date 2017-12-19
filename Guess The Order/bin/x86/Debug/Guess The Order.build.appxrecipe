@@ -388,6 +388,18 @@
     <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Icon\Level.png">
       <PackagePath>Assets\Icon\Level.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Four\1.png">
+      <PackagePath>Assets\Level_Four\1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Four\2.png">
+      <PackagePath>Assets\Level_Four\2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Four\3.png">
+      <PackagePath>Assets\Level_Four\3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Four\4.png">
+      <PackagePath>Assets\Level_Four\4.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_One\1.png">
       <PackagePath>Assets\Level_One\1.png</PackagePath>
     </AppxPackagedFile>
@@ -402,6 +414,30 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_One\GuessBox.png">
       <PackagePath>Assets\Level_One\GuessBox.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Three\1.png">
+      <PackagePath>Assets\Level_Three\1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Three\2.png">
+      <PackagePath>Assets\Level_Three\2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Three\3.png">
+      <PackagePath>Assets\Level_Three\3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Three\4.png">
+      <PackagePath>Assets\Level_Three\4.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Two\1.png">
+      <PackagePath>Assets\Level_Two\1.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Two\2.png">
+      <PackagePath>Assets\Level_Two\2.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Two\3.png">
+      <PackagePath>Assets\Level_Two\3.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\Level_Two\4.png">
+      <PackagePath>Assets\Level_Two\4.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Lurch\source\repos\Guess The Order\Guess The Order\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>

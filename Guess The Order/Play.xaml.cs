@@ -25,7 +25,8 @@ namespace Guess_The_Order
     public sealed partial class Play : Page
     {
 
-        int guessCounter, currentLevel;
+        int guessCounter;
+        int currentLevel;
         int coins;
 
         int[] answer = new int[] { 1, 3, 4, 2 };
@@ -51,6 +52,7 @@ namespace Guess_The_Order
             ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
             CurrentLevel.Text = "Level: " + localSettings.Values["CurrentLevel"].ToString();
             currentLevel = Convert.ToInt32(localSettings.Values["CurrentLevel"]);
+            //currentLevel = 0;
             LoadLevel();
         }
         /* Methods to Handle Image's Tapped */
@@ -170,7 +172,6 @@ namespace Guess_The_Order
                 clearGuessBoxes();
                 guessCounter = 0;
                 guess = new int[] { 0, 0, 0, 0 };
-                //coins -= 10;
                 localSettings.Values["CoinAmount"] = coins -= 10;
                 RefreshCoins();
             }
@@ -220,28 +221,36 @@ namespace Guess_The_Order
             switch(currentLevel)
             {
                 case 1:
-                    ImageOne.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
-                    ImageTwo.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
-                    ImageThree.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
-                    ImageFour.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    ImageOne.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/1.png"));
+                    ImageTwo.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/2.png"));
+                    ImageThree.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/3.png"));
+                    ImageFour.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/4.png"));
+                    
+                    answer = new int[] { 1, 3, 4, 2 };
                     break;
                 case 2:
-                    ImageOne.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
-                    ImageTwo.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
-                    ImageThree.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
-                    ImageFour.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    ImageOne.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_Two/1.png"));
+                    ImageTwo.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_Two/2.png"));
+                    ImageThree.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_Two/3.png"));
+                    ImageFour.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_Two/4.png"));
+                    Question.Text = "Order Premier League titles from highest to lowest.";
+                    answer = new int[] { 2, 1, 4, 3 };
                     break;
                 case 3:
-                    ImageOne.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
-                    ImageTwo.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
-                    ImageThree.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
-                    ImageFour.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    ImageOne.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_Three/1.png"));
+                    ImageTwo.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_Three/2.png"));
+                    ImageThree.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_Three/3.png"));
+                    ImageFour.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_Three/4.png"));
+                    Question.Text = "Order these countries from highest population to lowest.";
+                    answer = new int[] { 3, 1, 4, 2 };
                     break;
                 case 4:
-                    ImageOne.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
-                    ImageTwo.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
-                    ImageThree.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
-                    ImageFour.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
+                    ImageOne.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_Four/1.png"));
+                    ImageTwo.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_Four/2.png"));
+                    ImageThree.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_Four/3.png"));
+                    ImageFour.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_Four/4.png"));
+                    Question.Text = "Order US presidents in ascending order.";
+                    answer = new int[] { 4, 1, 2, 3 };
                     break;
                 case 5:
                     ImageOne.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));

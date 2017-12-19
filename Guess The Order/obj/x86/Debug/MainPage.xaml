@@ -12,7 +12,7 @@
         <StackPanel  HorizontalAlignment="Center" VerticalAlignment="Center">
             <TextBlock Text="Guess the Order" TextAlignment="Center" Style="{ThemeResource HeaderTextBlockStyle}" />
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" >
-                <Button x:ConnectionId='3' x:Name="colorButton" Background="Transparent" Width="auto"                    >
+                <Button x:ConnectionId='2' x:Name="colorButton" Background="Transparent" Width="auto"                    >
                     <StackPanel Orientation="Horizontal">
                         <SymbolIcon Symbol="Edit"  />
                         <TextBlock Text=" Play" FontSize="25" TextAlignment="Center"/>
@@ -21,14 +21,6 @@
             </StackPanel>
 
 
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" >
-                <Button x:ConnectionId='2' x:Name="accountButton" Background="Transparent" Width="auto">
-                    <StackPanel Orientation="Horizontal">
-                        <SymbolIcon Symbol="Home"  />
-                        <TextBlock Text=" My Account" FontSize="25" TextAlignment="Center"/>
-                    </StackPanel>
-                </Button>
-            </StackPanel>
 
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" >
                 <Button x:ConnectionId='1' x:Name="quit" Background="Transparent" Width="auto">
