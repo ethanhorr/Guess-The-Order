@@ -52,8 +52,8 @@
       <RootProperty Name="Width" />
       <RootProperty Name="Content" />
       <RootProperty Name="Margin" />
-      <RootEvent Name="Click" />
       <RootEvent Name="Tapped" />
+      <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.SymbolIcon">
       <RootProperty Name="Symbol" />

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using Windows.ApplicationModel.Core;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.ViewManagement;
@@ -32,6 +33,12 @@ namespace Guess_The_Order
         private void Play_Button(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(Play));
+        }
+
+        private void Quit_Tapped(object sender, TappedRoutedEventArgs e)
+        {
+
+                CoreApplication.Exit();
         }
     }
 }

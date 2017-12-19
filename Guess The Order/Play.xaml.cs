@@ -47,12 +47,12 @@ namespace Guess_The_Order
             coins = Convert.ToInt32(localSettings.Values["CoinAmount"]);
         }
 
+        /* Updates current level & Loads level */
         private void UpdateLevel()
         {
             ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
             CurrentLevel.Text = "Level: " + localSettings.Values["CurrentLevel"].ToString();
             currentLevel = Convert.ToInt32(localSettings.Values["CurrentLevel"]);
-            //currentLevel = 0;
             LoadLevel();
         }
         /* Methods to Handle Image's Tapped */
@@ -251,12 +251,6 @@ namespace Guess_The_Order
                     ImageFour.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_Four/4.png"));
                     Question.Text = "Order US presidents in ascending order.";
                     answer = new int[] { 4, 1, 2, 3 };
-                    break;
-                case 5:
-                    ImageOne.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
-                    ImageTwo.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
-                    ImageThree.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
-                    ImageFour.Source = new BitmapImage(new Uri("ms-appx:///Assets/Level_One/GuessBox.png"));
                     break;
             }
             guessCounter = 0;

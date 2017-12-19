@@ -23,7 +23,7 @@
 
 
             <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Center" >
-                <Button x:ConnectionId='1' x:Name="quit" Background="Transparent" Width="auto">
+                <Button x:ConnectionId='1' x:Name="Quit"                      Background="Transparent" Width="auto">
                     <StackPanel Orientation="Horizontal">
                         <SymbolIcon Symbol="Find"  />
                         <TextBlock Text=" Quit" FontSize="25" TextAlignment="Center"/>
