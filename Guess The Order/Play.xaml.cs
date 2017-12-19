@@ -200,7 +200,6 @@ namespace Guess_The_Order
             ApplicationDataContainer localSettings = ApplicationData.Current.LocalSettings;
             if (guess[0] == answer[0] && guess[1] == answer[1] && guess[2] == answer[2] && guess[3] == answer[3])
             {
-                //coins += 25;
                 localSettings.Values["CoinAmount"] = coins += 25;
                 clearGuessBoxes();
                 RefreshCoins();
@@ -216,6 +215,7 @@ namespace Guess_The_Order
             }
         }
 
+        /* Loads level depending on current level */
         private void LoadLevel()
         {
             switch(currentLevel)

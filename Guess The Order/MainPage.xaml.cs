@@ -15,6 +15,10 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+/*
+ *  Author: Ethan Horrigan
+ *  Class: Main - Loads the App, sets to full screen and handles buttons.
+*/
 
 namespace Guess_The_Order
 {
@@ -37,7 +41,6 @@ namespace Guess_The_Order
 
         private void Quit_Tapped(object sender, TappedRoutedEventArgs e)
         {
-
                 CoreApplication.Exit();
         }
     }
